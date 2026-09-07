@@ -3,7 +3,6 @@ import { Providers } from "./providers";
 import Header from "@/lib/components/Header";
 import Footer from "@/lib/components/Footer";
 import "./globals.css";
-import "@/styles/responsive-margins.css";
 
 export const metadata: Metadata = {
   title: "ROOTS-AI™ - Biological Assessment & Intelligence",
