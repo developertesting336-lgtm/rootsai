@@ -8,11 +8,5 @@
     "NEXT_PUBLIC_APP_URL": "https://roots-ai.vercel.app"
   },
   "cleanUrls": true,
-  "trailingSlash": false,
-  "regions": ["iad1"],
-  "functions": {
-    "api/**/*.ts": {
-      "maxDuration": 30
-    }
-  }
+  "trailingSlash": false
 }
