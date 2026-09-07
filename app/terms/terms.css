@@ -1,0 +1,184 @@
+/* TERMS PAGE SPECIFIC STYLES */
+
+/* HEADER SECTION */
+.terms-page .header-section {
+  background: #F3F4F6;
+  padding: 60px 16px 80px 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .terms-page .header-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .terms-page .header-section {
+    padding: 80px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .terms-page .header-section {
+    padding: 80px 120px;
+  }
+}
+
+/* MAIN CONTAINER */
+.terms-page .main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .terms-page .main-container {
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .terms-page .main-container {
+    grid-template-columns: 320px 1fr;
+    padding: 0 120px;
+  }
+}
+
+/* SIDEBAR */
+.terms-page .sidebar {
+  display: none;
+  position: sticky;
+  top: 80px;
+  background: #fff;
+  border: 1px solid #D8DEE8;
+  border-radius: 12px;
+  padding: 24px;
+  height: fit-content;
+}
+
+@media (min-width: 1024px) {
+  .terms-page .sidebar {
+    display: block;
+  }
+}
+
+.terms-page .sidebar-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1A2A4A;
+  margin-bottom: 16px;
+}
+
+.terms-page .sidebar-link {
+  display: block;
+  font-size: 14px;
+  color: #4B5563;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+}
+
+.terms-page .sidebar-link:last-child {
+  border-bottom: none;
+}
+
+.terms-page .sidebar-link:hover {
+  color: #1A2A4A;
+  font-weight: 600;
+}
+
+/* BODY CONTENT */
+.terms-page .body-section {
+  padding: 60px 16px 80px 16px;
+}
+
+@media (min-width: 768px) {
+  .terms-page .body-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .terms-page .body-section {
+    padding: 0;
+  }
+}
+
+.terms-page .legal-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1A2A4A;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.terms-page .legal-body {
+  font-size: 16px;
+  color: #1A1A1A;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.terms-page .legal-note {
+  font-size: 16px;
+  color: #4B5563;
+  line-height: 1.75;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+/* CONTACT CTA */
+.terms-page .contact-cta {
+  background: #fff;
+  border: 1px solid #D8DEE8;
+  border-radius: 12px;
+  padding: 32px;
+  margin: 60px 16px;
+}
+
+@media (min-width: 768px) {
+  .terms-page .contact-cta {
+    margin: 60px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .terms-page .contact-cta {
+    margin: 60px 0;
+  }
+}
+
+.terms-page .contact-cta-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1A2A4A;
+  margin-bottom: 8px;
+}
+
+.terms-page .contact-cta-desc {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 20px;
+}
+
+.terms-page .contact-cta-btn {
+  background: #1A2A4A;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.terms-page .contact-cta-btn:hover {
+  background: #0f1a2d;
+}

@@ -1,0 +1,218 @@
+/* COOKIES PAGE SPECIFIC STYLES */
+
+/* TITLE SECTION - with extra margins per Figma */
+.cookies-page .title-section {
+  background: #F3F4F6;
+  padding: 60px 16px 80px 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cookies-page .title-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cookies-page .title-section {
+    padding: 80px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cookies-page .title-section {
+    padding: 80px 120px;
+  }
+}
+
+.cookies-page .title-section h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1A2A4A;
+  margin-bottom: 16px;
+}
+
+.cookies-page .title-section p {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+
+/* BODY SECTION - with extra margins per Figma */
+.cookies-page .body-section {
+  padding: 80px 16px 100px 16px;
+}
+
+@media (min-width: 768px) {
+  .cookies-page .body-section {
+    padding: 100px 24px 120px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cookies-page .body-section {
+    padding: 120px 40px 140px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cookies-page .body-section {
+    padding: 140px 120px 160px 120px;
+  }
+}
+
+.cookies-page .intro-text {
+  font-size: 16px;
+  color: #1A1A1A;
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+
+/* PREFERENCES */
+.cookies-page .preferences-section {
+  background: #fff;
+  border: 1px solid #D8DEE8;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 60px;
+}
+
+.cookies-page .preferences-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1A2A4A;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.cookies-page .manage-btn {
+  background: #1A2A4A;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .cookies-page .manage-btn {
+    width: auto;
+  }
+}
+
+.cookies-page .manage-btn:hover {
+  background: #0f1a2d;
+}
+
+/* COOKIE CATEGORIES - TABLE */
+.cookies-page .categories-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1A2A4A;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.cookies-page .table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #D8DEE8;
+  border-radius: 12px;
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+.cookies-page .cookies-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.cookies-page .cookies-table thead {
+  background: #F3F4F6;
+  border-bottom: 2px solid #D8DEE8;
+}
+
+.cookies-page .cookies-table thead th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 700;
+  color: #1A2A4A;
+  font-size: 13px;
+}
+
+.cookies-page .cookies-table tbody tr {
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.cookies-page .cookies-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.cookies-page .cookies-table tbody td {
+  padding: 16px;
+  color: #1A1A1A;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.cookies-page .cookies-table .category-name {
+  font-weight: 600;
+  color: #1A2A4A;
+  white-space: nowrap;
+}
+
+.cookies-page .cookies-table .category-purpose,
+.cookies-page .cookies-table .category-control {
+  color: #4B5563;
+}
+
+.cookies-page .cookies-table .category-provider,
+.cookies-page .cookies-table .category-duration {
+  color: #6B7280;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 768px) {
+  .cookies-page .table-wrapper {
+    border: none;
+    border-radius: 0;
+  }
+
+  .cookies-page .cookies-table {
+    font-size: 13px;
+  }
+
+  .cookies-page .cookies-table thead {
+    display: none;
+  }
+
+  .cookies-page .cookies-table tbody tr {
+    display: block;
+    border: 1px solid #D8DEE8;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+
+  .cookies-page .cookies-table tbody td {
+    display: block;
+    padding: 8px 0;
+    border: none;
+    padding-left: 0;
+  }
+
+  .cookies-page .cookies-table tbody td:before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #6B7280;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 4px;
+  }
+}

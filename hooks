@@ -1,0 +1,54 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+export interface AuthUser {
+  email: string;
+  userId: string;
+  token: string;
+}
+
+export function useAuth() {
+  const [user, setUser] = useState<AuthUser | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if user is logged in
+    const token = localStorage.getItem('auth_token');
+    const email = localStorage.getItem('user_email');
+
+    if (token && email) {
+      setUser({
+        email,
+        userId: '',
+        token,
+      });
+      setError(null);
+    } else {
+      setUser(null);
+      setError('Not authenticated');
+    }
+
+    setLoading(false);
+  }, []);
+
+  const logout = () => {
+    localStorage.removeItem('auth_token');
+    localStorage.removeItem('user_email');
+    setUser(null);
+    router.push('/auth/signin');
+  };
+
+  const isAuthenticated = !!user;
+
+  return {
+    user,
+    loading,
+    error,
+    isAuthenticated,
+    logout,
+  };
+}

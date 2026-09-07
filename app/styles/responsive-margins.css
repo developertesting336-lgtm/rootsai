@@ -1,0 +1,14 @@
+/* Responsive Margin Utilities */
+
+/* Mobile-first approach */
+@media (max-width: 640px) {
+  /* Small screens: mobile devices */
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet screens */
+}
+
+@media (min-width: 1025px) {
+  /* Desktop screens */
+}
