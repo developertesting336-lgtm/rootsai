@@ -5,11 +5,7 @@
   "framework": "nextjs",
   "outputDirectory": ".next",
   "env": {
-    "NEXT_PUBLIC_APP_URL": {
-      "description": "The public URL of the application",
-      "required": false,
-      "default": "https://roots-ai.vercel.app"
-    }
+    "NEXT_PUBLIC_APP_URL": "https://roots-ai.vercel.app"
   },
   "cleanUrls": true,
   "trailingSlash": false,
